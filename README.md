@@ -1,27 +1,25 @@
-# Assignment 4: Stable Marriage Problem
+# Assignment 4: Box packing Problem
 
 ## Problem Statement:
 
-You are tasked with solving the Stable Marriage Problem, where there are n boys and n girls. Each boy has a ranked list of all the girls based on his preferences, and each girl has a ranked list of all the boys based on her preferences. The goal is to match each boy to a girl in such a way that the resulting marriages are stable.
+You are tasked with packing boxes in sequences, box A can be packed inside box B, if the length, breadth , height of box A are smaller than box B.
+
+    box A = (3,4,6)
+    box B = (7,6,9)
+    box A < box B
 
 ## Definitions:
-   - Stable Marriage: A marriage arrangement is considered stable if there is no unstable pair of a boy and a girl.
-
-   - Unstable Pair: A boy-girl pair (b, g) is considered unstable if:
-                     - Boy b prefers girl g over his current partner.
-                     - Girl g prefers boy b over her current partner.
-     In other words, an unstable pair is a situation where both the boy and the girl would rather be with each other than their current partners, leading to instability in the matching.
+   
 
 ## Task:
-Write a program to implement the Gale-Shapley algorithm (also known as the Deferred Acceptance Algorithm) to find a stable marriage for the given preferences of boys and girls.
+Write a program to implement the box packing algorithm to find  the largest number of boxes that can be packed in sequence.
 
 ## Input:
-   - An integer n, representing the number of boys and girls.
-   - A 2D list 'boy_preferences', **[[1, 2, 3], [2, 1, 3], [1, 2, 3]]** where each element is a list of size n representing a boy's ranked preferences for the girls. Each list contains integers from 1 to n, representing the girls.
+   - An integer n, representing the number of boxes.
+   - A list containing the dimensions of the boxes: ex: [(1, 5, 6),(3, 4, 5),(1, 2, 3),(6, 2, 8),(5, 5,1),(2, 3,1)]
      
-   - A 2D list 'girl_preferences',**[[2, 1, 3], [1, 3, 2], [3, 1, 2]]** where each element is a list of size n representing a girl's ranked preferences for the boys. Each list contains integers from 1 to n, representing the boys.
 
 ## Output:
-   - A list of size n, **[(1, 2), (2, 1), (3, 3)]** where each element (b, g) represents that boy b is married to girl g. This output should ensure that there are no unstable pairs, meaning the solution is stable.
+   - The largest number of boxes that can be packed. ex: 2.
 
-for further info please refer the stable marrige recorded lecture.
+for further info please refer the box packing recorded lecture.
