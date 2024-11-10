@@ -15,7 +15,9 @@ Write a program to implement the box packing algorithm to find  the largest numb
 
 ## Input:
    - An integer n, representing the number of boxes.
-   - A list containing the dimensions of the boxes: ex: [(1, 5, 6),(3, 4, 5),(1, 2, 3),(6, 2, 8),(5, 5,1),(2, 3,1)]
+   - A list containing the dimensions of the boxes.
+
+                  ex: [ (1, 5, 6), (3, 4, 5), (1, 2, 3), (6, 2, 8), (5, 5,1), (2, 3,1) ]
      
 
 ## Output:
