@@ -8,7 +8,6 @@ You are tasked with packing boxes in sequences, box A can be packed inside box B
     box B = (7,6,9)
     box A < box B
 
-## Definitions:
    
 
 ## Task:
